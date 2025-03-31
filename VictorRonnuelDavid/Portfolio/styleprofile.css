@@ -1,0 +1,285 @@
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 35%; /* Start at the middle of the screen */
+    width: 60%; /* Cover only the right side */
+    height: 100%;
+    background: linear-gradient(-45deg, #b80751, #4d0350, #4204d3, #cb03dd);
+    background-size: 400% 400%;
+    animation: waveBackground 10s ease infinite;
+    z-index: -1; /* Keeps the background behind everything */
+}
+
+@keyframes waveBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Ensures text and buttons stay above the background */
+.portrait-container, .button-Profile, .button-About, .letters {
+    position: relative;
+    z-index: 1;
+    
+}
+.portrait-container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 30%; 
+    padding-left: 30px; 
+    z-index: 100; 
+}
+
+.text-portrait {
+    font-size: 7px; 
+    line-height: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: arial;
+
+    
+    max-width: 550px;  
+    padding: 5px;
+    background: url('images/victor.jpg') no-repeat left center;
+    background-size: 490px 450px;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+}
+
+
+.button-Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px 20px;
+}
+
+.custom-Profile {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-Profile:hover {
+    background: linear-gradient(45deg, #ff7300, #ff0000);
+    transform: scale(1.1);
+}
+
+.button-About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px 20px;
+}
+
+.custom-About {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.custom-About:hover {
+    background: linear-gradient(45deg, #ff7300, #ff0000);
+    transform: scale(1.1);
+}
+
+.Victor, .Ronnuel, .David {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "Clip", sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    color: #fff;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff7300, 0 0 15px #fffb00,
+        0 0 20px #48ff00, 0 0 25px #00ffff, 0 0 30px #2b65ff,
+        0 0 35px #8000ff;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Adjusted Positions to Prevent Overlap */
+.Victor { left: -5%; top: 10%; }
+.Ronnuel { left: 13%; top: 10%; }
+.David { left: 29%; top: 10%; }
+
+/* Remove underline and style the "Profile" link like a button */
+.custom-Profile {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Text color */
+    background-color: blue; /* Button background */
+    padding: 10px 20px; /* Space inside the button */
+    border-radius: 5px; /* Rounded edges */
+    display: inline-block; /* Makes it behave like a button */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Makes text bold */
+    transition: 0.3s; /* Smooth effect */
+}
+
+/* Hover effect */
+.custom-Profile:hover {
+    background-color: darkblue; /* Darker shade when hovered */
+}
+
+/* Style for actual <button> elements */
+.custom-Goal {
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border: none; /* Removes default button border */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /* Shows pointer when hovered */
+    transition: 0.3s;
+}
+
+/* Profile Page Specific Styles */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+/* Adjusting the Profile Button */
+.custom-Profile {
+    text-decoration: none; /* Removes underline */
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.custom-Profile:hover {
+    background-color: darkblue;
+}
+
+.profile-image {
+    width: 450px;  /* Change this to make it bigger or smaller */
+    height: auto;  /* Keeps the aspect ratio */
+    position: absolute;
+    left: 20px;  /* Adjust this to move it more to the left */
+    top: 50%;  
+    transform: translateY(-50%); /* Centers vertically */
+    border-radius: 20%;
+    
+}
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    text-align: left;
+    padding-left: 500px; /* Moves text away from the image */
+    max-width: 600px; /* Prevents text from stretching too far */
+}
+
+/* Buttons (Profile, About) */
+.button-Profile, .button-About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px 20px;
+}
+
+/* General Button Style */
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.custom-button:hover {
+    background: linear-gradient(45deg, #ff7300, #ff0000);
+    transform: scale(1.1);
+}
+
+/* Remove Repeated Code */
+.custom-Profile, .custom-About, .custom-Goal {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff7300, 0 0 15px #fffb00,
+            0 0 20px #48ff00, 0 0 25px #00ffff, 0 0 30px #2b65ff,
+            0 0 35px #8000ff;
+    }
+    100% {
+        text-shadow: 0 0 10px #8000ff, 0 0 15px #2b65ff, 0 0 20px #00ffff,
+            0 0 25px #48ff00, 0 0 30px #fffb00, 0 0 35px #ff7300,
+            0 0 40px #ff0000;
+    }
+}
+
+.flicker {
+    animation: flicker 1.5s infinite alternate;
+}
+
+.fast-flicker {
+    animation: flicker 0.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0.3;
+    }
+}
