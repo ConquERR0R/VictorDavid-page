@@ -9,23 +9,27 @@
 
   <div id="container">
     <div id="image_container">
-      <img src="img/francemap.png" usemap="#image-map" class="france-map" width="1000" alt="France Map">
+      <!-- Make sure this image exists at img/francemap.png -->
+      <img src="img/francemap.png" usemap="#image-map" class="france-map" width="1000" alt="Interactive Map of France">
+      
+      <!-- Image Map -->
       <map name="image-map">
-        <area alt="paris" title="paris" target="_blank" href="https://en.wikipedia.org/wiki/Paris" coords="370,457,482,67,592,455,492,453" shape="poly">
-        <area alt="oldest tree" title="oldest tree" target="_blank" href="https://www.atlasobscura.com/places/oldest-tree-paris" coords="659,247,627,201,556,210,546,256,583,261,604,290" shape="poly">
-        <area alt="castle" title="castle" target="_blank" href="https://www.veranda.com/travel/g30083514/beautiful-castles-in-the-world/" coords="130,278,201,284,352,276,248,112,187,195" shape="poly">
-        <area alt="girl" title="girl" target="_blank" href="https://www.tribuneindia.com/news/entertainment/israeli-rappers-call-for-dua-lipa-bella-hadid-mia-khalifa-to-be-killed-in-chart-topping-track-591454" coords="115,1282,206,1079" shape="rect">
-        <area alt="ice cream" title="ice cream" target="_blank" href="https://www.dreamstime.com/editorial-photography-berthillon-famous-ice-cream-shop-paris-france-image45410127" coords="237,645,346,642,349,523,232,520" shape="poly">
-        <area alt="people" title="people" target="_blank" href="https://www.everywhereist.com/2013/07/walking-down-les-champs-elysees-paris/" coords="391,497,387,655,552,645,549,498" shape="poly">
-        <area alt="village" title="village" target="_blank" href="https://www.tripsavvy.com/quant-villages-in-paris-1618720" coords="767,434,600,419,608,333,739,289,782,400" shape="poly">
-        <area alt="flag" title="flag" target="_blank" href="https://www.istockphoto.com/photos/paris-flag" coords="806,190,84" shape="circle">
-        <area alt="me" title="me" target="_blank" href="https://www.facebook.com/vykthr69/" coords="649,1125,672,1106,725,1220,689,1267,632,1249,628,1189,650,1163" shape="poly">
-        <area alt="fries" title="fries" target="_blank" href="https://www.potatonewstoday.com/2024/07/28/culinary-controversy-at-the-games-french-fries-banned-from-paris-olympics-menu/" coords="903,898,884,704,757,701,753,890,850,893" shape="poly">
-        <area alt="pizza" title="pizza" target="_blank" href="https://www.pariseater.com/restaurants/the-ultimate-guide-to-the-best-pizza-in-paris/" coords="733,1080,752,1214,931,1229,911,1064,795,1048,751,1049" shape="poly">
-        <area alt="school" title="school" target="_blank" href="https://www.relocatemagazine.com/dir-schools-i-international-school-of-paris" coords="606,593,719,599,726,699,594,696" shape="poly">
-        <area alt="castle1" title="castle1" target="_blank" href="https://www.doitinparis.com/en/castles-near-paris-26521" coords="336,922,486,919,491,1069,311,1076,293,1029" shape="poly">
-        <area alt="villages" title="villages" target="_blank" href="https://www.en-vols.com/en/getaways/france-villages-bucolic-paris/" coords="753,558,766,448,915,415,942,548" shape="poly">
-        <area alt="tourist spot" title="tourist spot" target="_blank" href="https://www.lonelyplanet.com/destinations/france/paris" coords="400,600,500,700,450,800" shape="poly">
+        <!-- Adjusted some coords if needed, especially if original coords went off image height -->
+        <area alt="Paris" title="Paris" target="_blank" href="https://en.wikipedia.org/wiki/Paris" coords="370,457,482,67,592,455,492,453" shape="poly">
+        <area alt="Oldest Tree" title="Oldest Tree" target="_blank" href="https://www.atlasobscura.com/places/oldest-tree-paris" coords="659,247,627,201,556,210,546,256,583,261,604,290" shape="poly">
+        <area alt="Castle" title="Castle" target="_blank" href="https://www.veranda.com/travel/g30083514/beautiful-castles-in-the-world/" coords="130,278,201,284,352,276,248,112,187,195" shape="poly">
+        <area alt="Girl" title="Girl" target="_blank" href="https://www.tribuneindia.com/news/entertainment/israeli-rappers-call-for-dua-lipa-bella-hadid-mia-khalifa-to-be-killed-in-chart-topping-track-591454" coords="115,1079,206,1282" shape="rect">
+        <area alt="Ice Cream" title="Ice Cream" target="_blank" href="https://www.dreamstime.com/editorial-photography-berthillon-famous-ice-cream-shop-paris-france-image45410127" coords="237,645,346,642,349,523,232,520" shape="poly">
+        <area alt="People" title="People" target="_blank" href="https://www.everywhereist.com/2013/07/walking-down-les-champs-elysees-paris/" coords="391,497,387,655,552,645,549,498" shape="poly">
+        <area alt="Village" title="Village" target="_blank" href="https://www.tripsavvy.com/quant-villages-in-paris-1618720" coords="767,434,600,419,608,333,739,289,782,400" shape="poly">
+        <area alt="Flag" title="Flag" target="_blank" href="https://www.istockphoto.com/photos/paris-flag" coords="806,190,84" shape="circle">
+        <area alt="Me" title="Me" target="_blank" href="https://www.facebook.com/vykthr69/" coords="649,1125,672,1106,725,1220,689,1267,632,1249,628,1189,650,1163" shape="poly">
+        <area alt="Fries" title="Fries" target="_blank" href="https://www.potatonewstoday.com/2024/07/28/culinary-controversy-at-the-games-french-fries-banned-from-paris-olympics-menu/" coords="903,898,884,704,757,701,753,890,850,893" shape="poly">
+        <area alt="Pizza" title="Pizza" target="_blank" href="https://www.pariseater.com/restaurants/the-ultimate-guide-to-the-best-pizza-in-paris/" coords="733,1080,752,1214,931,1229,911,1064,795,1048,751,1049" shape="poly">
+        <area alt="School" title="School" target="_blank" href="https://www.relocatemagazine.com/dir-schools-i-international-school-of-paris" coords="606,593,719,599,726,699,594,696" shape="poly">
+        <area alt="Castle 1" title="Castle 1" target="_blank" href="https://www.doitinparis.com/en/castles-near-paris-26521" coords="336,922,486,919,491,1069,311,1076,293,1029" shape="poly">
+        <area alt="Villages" title="Villages" target="_blank" href="https://www.en-vols.com/en/getaways/france-villages-bucolic-paris/" coords="753,558,766,448,915,415,942,548" shape="poly">
+        <area alt="Tourist Spot" title="Tourist Spot" target="_blank" href="https://www.lonelyplanet.com/destinations/france/paris" coords="400,600,500,700,450,800" shape="poly">
       </map>
     </div>
   </div>

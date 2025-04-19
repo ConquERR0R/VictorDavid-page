@@ -1,4 +1,4 @@
-/* General page styling */
+/* Reset some default browser styles */
 body {
     margin: 0;
     padding: 0;
@@ -10,16 +10,7 @@ body {
     height: 100vh;
 }
 
-/* France map styling */
-.france-map {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Container for everything */
+/* Container with shadow and padding */
 #container {
     padding: 20px;
     background-color: white;
@@ -27,29 +18,28 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Image map container */
+/* Wrapper for the image */
 #image_container {
     position: relative;
 }
 
-/* Make the image responsive */
-#image_container img {
-    max-width: 100%;
+/* Map image styling */
+#image_container img.france-map {
+    width: 100%;
+    max-width: 1000px;
     height: auto;
+    display: block;
     border-radius: 12px;
 }
 
-/* Optional: Add hover effect to the clickable areas */
+/* Interactive area cursor */
 area {
     cursor: pointer;
 }
 
-/* Styling for focus effect (for accessibility) */
+/* Focus outline for accessibility */
 area:focus {
     outline: 2px solid #007BFF;
 }
 
-/* Tooltip hover effect */
-area:hover {
-    filter: brightness(90%);
-}
+/* Note: hover effects on <area> are limited in browsers */
